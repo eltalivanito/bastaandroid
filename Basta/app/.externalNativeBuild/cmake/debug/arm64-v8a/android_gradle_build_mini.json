@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\J.Antonio\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "native-lib2-Debug-arm64-v8a": {
+      "artifactName": "native-lib2",
+      "buildCommand": "C:\\Users\\J.Antonio\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target native-lib2",
+      "abi": "arm64-v8a",
+      "output": "C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-lib2.so"
+    },
+    "native-lib-Debug-arm64-v8a": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\J.Antonio\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target native-lib",
+      "abi": "arm64-v8a",
+      "output": "C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a\\libnative-lib.so"
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\proyectosa\\Basta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cristina Silva\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d0758db354e715094c258992ed0d5c16\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\J.Antonio\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\a7205e0f807437723597eab77f3907d4\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,41 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Cristina Silva\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\a3644235af739f15b9f9c58c3dbba4e7\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "C:\\Users\\ivan\\Desktop\\basta\\Basta\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\ivan\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\f63a3808082bccc68806afbcb436b14c\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ivan\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\1b0747243f7b90ea52d1fdac762b84d2\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\J.Antonio\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\ca64dc7d554ca2c62341a5cf5f0ad2a4\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ivan/Desktop/basta/Basta/app
+# Install script for directory: C:/xampp/htdocs/git/bastaandroid/Basta/app
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ivan/Desktop/basta/Basta/app/.externalNativeBuild/cmake/release/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/xampp/htdocs/git/bastaandroid/Basta/app/.externalNativeBuild/cmake/release/armeabi-v7a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
