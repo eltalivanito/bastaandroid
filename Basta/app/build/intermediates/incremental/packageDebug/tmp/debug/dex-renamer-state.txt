@@ -1,13 +1,4 @@
-#Tue May 22 21:47:30 CDT 2018
-path.3=classes.dex
-path.2=classes.dex
-path.1=classes.dex
+#Sun May 27 00:14:24 CDT 2018
+base.0=C\:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=C\:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.2=C\:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-base.1=C\:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.0=C\:\\xampp\\htdocs\\git\\bastaandroid\\Basta\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11

@@ -8,7 +8,7 @@
 extern "C"
 
 typedef struct ElementoLista {
-    int *dato;
+    int dato;
     struct ElementoLista *siguiente;
 }Elemento;
 
@@ -25,16 +25,11 @@ void inicializacion (Lista *lista){
 }
 
 /* inserción en una lista vacía */
-int ins_en_lista_vacia (Lista * lista, int *dato){
+int ins_en_lista_vacia (Lista * lista, int dato){
     Elemento *nuevo_elemento;
     if ((nuevo_elemento = (Elemento *) malloc (sizeof (Elemento))) == NULL)
-        return -1;
-    if ((nuevo_elemento->dato = (int *) malloc (50 * sizeof (int)))
-        == NULL){
-        int tamaño;
-    }else{
-        nuevo_elemento->dato;
-    }
+    {return -1;}
+    nuevo_elemento->dato;
     nuevo_elemento->siguiente = NULL;
     lista->inicio = nuevo_elemento;
     lista->fin = nuevo_elemento;
@@ -42,17 +37,12 @@ int ins_en_lista_vacia (Lista * lista, int *dato){
 }
 
 /* inserción al inicio de la lista */
-int ins_inicio_lista (Lista * lista, int *dato){
+int ins_inicio_lista (Lista * lista, int dato){
     Elemento *nuevo_elemento;
     if ((nuevo_elemento = (Elemento *) malloc (sizeof (Elemento))) == NULL)
-        return -1;
-    if ((nuevo_elemento->dato = (int *) malloc (50 * sizeof (int)))
-        == NULL){
-        return -1;
-    }else{
+    {return -1;}
         nuevo_elemento->dato;
-    }
-    nuevo_elemento->siguiente = lista->inicio
+    nuevo_elemento->siguiente = lista->inicio;
     lista->inicio = nuevo_elemento;
     lista->tamaño++;
 }
@@ -63,7 +53,7 @@ int visualizacion (Lista * lista){
     int puntajetotal=0;
     actual = lista->inicio;
     while (actual != NULL){
-        puntajetotal= reinterpret_cast<int>(actual->dato + puntajetotal);
+        puntajetotal = actual->dato;
         //printf ("%p - %s\n", actual, actual->dato);
         actual = actual->siguiente;
     }
@@ -87,9 +77,9 @@ Java_com_example_android_basta_MainActivity_leerpuntaje(JNIEnv *env, jobject ins
     //resultado=contadorpuntos;
     Lista *lista;
     inicializacion(lista);
-    ins_en_lista_vacia (lista, reinterpret_cast<int *>(puntaje[0]));
+    ins_en_lista_vacia (lista, puntaje[0]);
     for(int i=1;i<5;i++){
-        ins_inicio_lista (lista, reinterpret_cast<int *>(puntaje[i]));
+        ins_inicio_lista (lista, puntaje[i]);
         //contadorpuntos=puntaje[i]+contadorpuntos;
     }
     //ins_en_lista_vacia (Lista * lista, int *dato);
