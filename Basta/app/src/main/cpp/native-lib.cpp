@@ -7,6 +7,21 @@
 
 extern "C"
 
+JNIEXPORT jint JNICALL
+Java_com_example_android_basta_MainActivity_leerpuntaje(JNIEnv *env, jobject instance,
+                                                        jintArray puntaje_) {
+    jint *puntaje = env->GetIntArrayElements(puntaje_, NULL);
+    jint *puntajetraido = env->GetIntArrayElements(puntaje_, NULL);
+    int contadorpuntos=0;
+    std::string resultado ="";
+    // TODO
+    for(int i=0;i<5;i++){
+        contadorpuntos=puntaje[i]+contadorpuntos;
+    }
+    //resultado=contadorpuntos;
+    env->ReleaseIntArrayElements(puntaje_, puntaje, 0);
+    return contadorpuntos;
+}
 
 
 typedef struct ElementoLista {
@@ -32,7 +47,7 @@ int ins_en_lista_vacia (Lista * lista, int *dato){
     if ((nuevo_elemento = (Elemento *) malloc (sizeof (Elemento))) == NULL)
         return -1;
     if ((nuevo_elemento->dato = (int *) malloc (50 * sizeof (int)))
-    == NULL){
+        == NULL){
         int tamaño;
     }else{
         nuevo_elemento->dato;
@@ -59,20 +74,12 @@ int ins_inicio_lista (Lista * lista, int *dato){
     lista->tamaño++;
 }
 
-
-
-JNIEXPORT jint JNICALL
-Java_com_example_android_basta_MainActivity_leerpuntaje(JNIEnv *env, jobject instance,
-                                                        jintArray puntaje_) {
-    jint *puntaje = env->GetIntArrayElements(puntaje_, NULL);
-    jint *puntajetraido = env->GetIntArrayElements(puntaje_, NULL);
-    int contadorpuntos=0;
-    std::string resultado ="";
-    // TODO
-    for(int i=0;i<5;i++){
-        contadorpuntos=puntaje[i]+contadorpuntos;
+/* visualización de la lista */
+void visualización (Lista * lista){
+    Elemento *actual;
+    actual = lista->inicio;
+    while (actual != NULL){
+        printf ("%p - %s\n", actual, actual->dato);
+        actual = actual->siguiente;
     }
-    //resultado=contadorpuntos;
-    env->ReleaseIntArrayElements(puntaje_, puntaje, 0);
-    return contadorpuntos;
 }
