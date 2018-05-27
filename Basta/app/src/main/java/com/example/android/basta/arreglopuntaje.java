@@ -1,13 +1,13 @@
 package com.example.android.basta;
 
 public class arreglopuntaje {
-    private final String[] respuestas;
+    private final int[] respuestas;
 
-    public arreglopuntaje(String[] respuestas) {
+    public arreglopuntaje(int[] respuestas) {
         this.respuestas = respuestas;
     }
 
-    public String[] getRespuestas() {
+    public int[] getRespuestas() {
         return respuestas;
     }
 }
