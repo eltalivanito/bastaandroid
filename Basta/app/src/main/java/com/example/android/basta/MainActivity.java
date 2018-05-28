@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         puntaje[1]=1;
         puntaje[2]=0;
         puntaje[3]=1;
-        puntaje[4]=0;
+        puntaje[4]=1;
         puntaje[5]=0;
         //puntaje[6]='D';
                 //LETRA,ANIMALES, COLORES, FRUTAS, CIUDADES, PAISES, PELICULAS
@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
         //tv1.setText("Marcador de la ronda: "+leerpuntaje(respuestasdevueltas));
         //TextView tv1 = (TextView) findViewById(R.id.textView2);
         //tv1.setText(stringFromJNI2());
-        tv1.setText(leerpuntaje(respuestasdevueltas));
+        int resultadofinaltotal=0;
+        resultadofinaltotal=leerpuntaje(puntaje);
+        tv1.setText("Resultado total final:"+resultadofinaltotal);
     }
 
     /**
@@ -49,5 +51,5 @@ public class MainActivity extends AppCompatActivity {
      */
     //public native String stringFromJNI();
     //public native String stringFromJNI2();
-    public native int leerpuntaje(int[] respuestas);
+    public native int leerpuntaje(int[] puntaje);
     }

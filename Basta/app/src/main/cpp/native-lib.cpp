@@ -5,7 +5,8 @@
 #include <iostream>
 
 
-extern "C"
+extern "C"{
+
 
 struct Nodo{
     int dato;
@@ -45,7 +46,6 @@ int imprimirpuntaje(Nodo *lista){
 }
 
 
-
 JNIEXPORT jint JNICALL
 Java_com_example_android_basta_MainActivity_leerpuntaje(JNIEnv *env, jobject instance,
                                                         jintArray puntaje_) {
@@ -55,25 +55,27 @@ Java_com_example_android_basta_MainActivity_leerpuntaje(JNIEnv *env, jobject ins
     //std::string resultado ="";
     // TODO
 
-    for(int i=0;i<6;i++){
+    for(int i=0;i<5;i++){
         contadorpuntos=puntaje[i]+contadorpuntos;
     }
     //resultado=contadorpuntos;
     Nodo *lista = NULL;
-    //inicializacion(lista);
-    //ins_en_lista_vacia (lista, puntaje[0]);
-    /*
+
+
+
     for(int i=0;i<5;i++){
         insertarlista (lista, puntaje[i]);
-        //contadorpuntos=puntaje[i]+contadorpuntos;
+        contadorpuntos=puntaje[i]+contadorpuntos;
     }
-     */
+
     //ins_en_lista_vacia (Lista * lista, int *dato);
-    env->ReleaseIntArrayElements(puntaje_, puntaje, 0);
+    //env->ReleaseIntArrayElements(puntaje_, puntaje, 0);
     //return visualizacion(lista);
     int resultadofinal=0;
-    resultadofinal=imprimirpuntaje(lista);
+    contadorpuntos=imprimirpuntaje(lista);
+    //return contadorpuntos;
     return contadorpuntos;
 }
 
 
+}
