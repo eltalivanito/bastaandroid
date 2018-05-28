@@ -37,9 +37,10 @@ public class MainActivity extends AppCompatActivity {
         //tv.setText(stringFromJNI());
         //tv.setText(leerpuntaje(crearrespuestas.getRespuestas()));
         TextView tv1 = (TextView) findViewById(R.id.textView2);
-        tv1.setText("Marcador de la ronda: "+leerpuntaje(respuestasdevueltas));
+        //tv1.setText("Marcador de la ronda: "+leerpuntaje(respuestasdevueltas));
         //TextView tv1 = (TextView) findViewById(R.id.textView2);
         //tv1.setText(stringFromJNI2());
+        tv1.setText(leerpuntaje(respuestasdevueltas));
     }
 
     /**

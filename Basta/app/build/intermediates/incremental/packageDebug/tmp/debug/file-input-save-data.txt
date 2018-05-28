@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 27 00:14:25 CDT 2018
+#Sun May 27 00:24:47 CDT 2018
 4.path=lib/x86/libnative-lib.so
 8.set=DEX
 6.path=lib/armeabi-v7a/libnative-lib.so
